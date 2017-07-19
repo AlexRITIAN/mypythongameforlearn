@@ -1,0 +1,4 @@
+1.Exception:
+    ModuleNotFoundError: No module named 'future'
+    reason:use pyglet 1.3.0b1
+    soultion:change pyglet 1.2.4
