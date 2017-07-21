@@ -2,3 +2,15 @@
     ModuleNotFoundError: No module named 'future'
     reason:use pyglet 1.3.0b1
     soultion:change pyglet 1.2.4
+
+2.bezier_conf actually is cocos.path.bezier(x,y,ac,bc).
+    attribute is position
+    example:
+        sprite = cocos.sprite.Sprite("hello_world_action_sprite.jpg")
+        sprite.position = 320, 240
+        sprite.scale = 1
+        self.add(sprite)
+        # x---start position,y---end position
+        # ac---effect position,bc---effect position
+        bezier = cocos.path.Bezier((0,0),(300,0),(50,500),(200,100))
+        sprite.do(Bezier(bezier,5))
